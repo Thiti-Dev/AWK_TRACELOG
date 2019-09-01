@@ -99,6 +99,8 @@
 - Minor update of the crafting system
 - Fix bug of the crafting system when passing the arguments to the GAME
 - Crafting system is now finished
+- Create the 3d menu for entering the amount and other things
+- Added the give-item with synced animation with other player
 
 
 ## [1.0.0] - 2019-08-13
