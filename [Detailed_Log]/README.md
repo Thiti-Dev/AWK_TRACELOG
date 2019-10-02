@@ -47,47 +47,72 @@ This project is created and implemented by [Thiti Mahawannakit](https://www.face
 - [x] Status System > Perfect UI
 - [x] Custom stamina system
 - [x] Queue System
-- [ ] Phone System [ On-going ]
+- [x] Phone System [ On-going ]
+- [x] Market framework
+- [x] More view in ChangeLog.
 
 #### BIGFIX - CUSTOM FIX
 - [x] Sync the vehicle lock or unlock
 - [x] Instace system with custom voicechannel that generated the hash from string
 
 #### Incoming-Improvement [ Don't Forget ]
-- [ ] Go to all TaskPlayAnim and set the duration for each anim > Prevent casuing Infinite Loop
+- [x] Fix weapon can reload ( ex pistol when ammo > 12)
+- [x] when people reconnect the game the Police map is broken <- only this map
+- [ ] Fetch the mod-data from the server-side again before taking the vehicle out of the garage
+- [ ] Motercycles should have a plate for it self
+- [x] Vehicles plate should be more the 6 characters to prevent the swhitespace
+- [x] Go to all TaskPlayAnim and set the duration for each anim > Prevent casuing Infinite Loop
 - [ ] all clothes should have it own name , not just like - Uniform of .....
-- [ ] check if holding object in the different instance causing conflict or not?
+- [x] check if holding object in the different instance causing conflict or not?
 - [ ] Prevent player from needing to enter the amount when player only had 1 object / also from houseinventory / trunk
 - [x] make the awoken_interact_menu triggerEvent when player was loaded and get the information of the list of house inventory > to be more dynamic
-- [ ] Save the house inventory to the database with anyway that i like :P
+- [x] Save the house inventory to the database with anyway that i like :P
 - [ ] When someone is on a driver seat > make it can't open trunk [ Prevent network id request ] > [ Or i have to call to the host for it]
-- [ ] Make the hat prop always attached to player [ NOT IMPORTANT ]
+- [ ] Make the hat prop always attached to player [ NOT IMPORTANT - Wait for fivem fix ]
 - [x] Check if already wear a clothes when tryna put on clothes
 - [x] Check for the matching gender when tryna use clothes
 - [x] Avoid store a car,house owner as an full string , just store an id of it [ Relation ]
-- [ ] AddEventHandler to listen whenever wanting to close all the NUI [ Prevent Conflict ]
-- [ ] Check for existing FirstName and LastName on registeration
+- [x] AddEventHandler to listen whenever wanting to close all the NUI [ Prevent Conflict ]
+- [x] Check for existing FirstName and LastName on registeration
 - [x] Show label if inventory has no item ( Blank box instead )
 - [ ] Add prevention from recieving items from different people at the same time
 - [x] When buying vehicle > check the plate on the DB first if exist make another one
-- [ ] Make crafting system remove the item in the array  >  Prepare for real use
-- [ ] Hide other players when registering
-- [ ] Cost player money when buy a vehicle
+- [x] Make crafting system remove the item in the array  >  Prepare for real use
+- [x] Hide other players when registering
+- [ ] Cost player money when buy a vehicle [ later when ready ]
 - [ ] Disabled motocycle lock > More realistic
 - [x] Save clothes values on changing [ Send to the server-side ]
 
 #### Incoming-Features
-- [ ] Seatbeat system ( Minor priority because it is easy )
-- [ ] Police system with animation on cuff ( Minor priority because it is easy )
-- [ ] ID card system , making and more . . .
-- [ ] JOBS , AND ECONOMY SYSTEM
-- [ ] Weapon system ( Minor priority because i will be having to be done with the job framework first )
+- [x] Seatbeat system ( Minor priority because it is easy )
+- [x] Police system with animation on cuff ( Minor priority because it is easy )
+- [x] ID card system , making and more . . .
+- [x] JOBS , AND ECONOMY SYSTEM
+- [x] Weapon system ( Minor priority because i will be having to be done with the job framework first )
+
+- [ ] put player into vehicle while dragging play [ FOR POLICE ]
+- [x] Police give bill with custom input for reason and price
+- [x] Litter [ need minor sync ]
+- [ ] Send rental vehicle back
+- [ ] Send proper player into jail
+- [x] Save thirsty and hungry and also HP
+- [ ] Change clothes name to be like what it does look like
+- [ ] Change 24/7 menu to the lastest one
+- [x] Make a public craft menu [ Public Bench ]
+- [x] Save item in trunk
+- [x] Save item in house
+- [ ] Veh customization => support all part
+- [ ] Tattoos removal
+- [x] Normal craft system
+- [x] Finish phone system
+- [x] Hide others player when in the character customization
+- [ ] Causing money on buying fuel [ last ]
 
 #### Challenging - Features  [ Require extra money > HARD SYSTEM!! > Needed to be Discussed ]
 - [ ] Wakie Talkie without using in-game voice channel , and tokovoip [ Using SimpleWebRTC ]
 
 #### Currently working-on
-- [ ] Phone system
+- [x] Phone system
 
 #### Known-Issue
 - [x] FIXED : SOLUTION > AddDelay to wait for control Trunk only can control by host ID

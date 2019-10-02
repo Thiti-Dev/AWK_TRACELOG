@@ -223,3 +223,293 @@
 - Added point finger
 - Create a structure of the backend for phone system
 - Port from mysql to mongoDB [ On - going ] : Phone system
+
+## [1.0.0] - 2019-09-02
+- Phone system finished ( chat , screenshot , call > working RTC)
+
+## [1.0.0] - 2019-09-03
+- Created a framework of finding a volunteer to do specific task > like Creating the job object
+- Improved on generating the wreck car to be more unique by random the entity-heading too
+- Use find 3d groundZcoord instead of PlaceObjectOnGroundProperly : Proper placed object on ground
+
+
+## [1.0.0] - 2019-09-04
+- Finally created the car-wreck job
+- Improved the current awoken_progress to be able to handle on success and onTick << Big update >>
+- Created the particle fx when doing the animation to make it looks more realistic
+- Applied the network to particle fx to be able to be seen by other's player
+- Added 2 items ( car engine , metal part ) when player successfully grind the wreck part
+- Added random method when grinded car wreck to give the player a random item
+
+## [1.0.0] - 2019-09-05
+- Added Crime notify with beautiful minimal Notification which will be appeared on the screen
+- Added lockPick item
+- Added LockPicking the car and then removed the item when lockpicking is success and Start the vehicle alarm also
+- Added Lockpicking Progress
+
+## [1.0.0] - 2019-09-06
+- Added Middle market with Sweet UI
+- Added hook when successfully sell item to make the UI updated up to date
+- Added Economy variable on server which will be fetching the economy from the database and do some calc
+- Added Checker when sell item if the data is really valid
+- Passed the economy to the UI and do the task instead of the grocery list
+- Added the config file where storing the Markets and else
+- Added The open menu ability when standing in the right area
+- Now UI can be exit when user press the ESC button
+
+## [1.0.0] - 2019-09-07
+- New loading screen
+- Added the log N information of server
+- Make the log box can be scrolled
+- Added a custom cursor for loadingScreen
+- Added music for loading screen
+- Improved the market UI
+- Make the UI re-useable with normal shop
+- Added the config file for shops
+- Added The open menu ability when standing in the right area
+- Now UI can be exit when user press the ESC button
+- Fixed the item with quantityLeft bugs when tryna dropping >> split the specific string
+- Added sprite and chickenPie to the shop
+- Food and Drink may now eatable/drinkable
+- Moved the thread where keep/drop item to the same thread as the controller <<<< To prevent Keep/Drop while drink or eating glitch>>>>
+- Added virtualization hunger and thirst
+- Added a smooth transition when drink/eat
+
+## [1.0.0] - 2019-09-08
+- Weapon System Has Been Added
+- Weapon system support with the hostler animation when pulling in and out
+- Improved and optimized weapon system
+- Move the thread the used to be a checker from inventory event to the thread of the weapon system
+- Exports some useful function in order to be re-useable with other resource when comes to checking the weapon
+- Change on drop player item which uses fixed var to set the objectRot > change to place object on ground proper or not
+- Added 9mmPistol
+- Added 9mmMagazine
+- Added 9mmBullet
+- Added Holster animation when pullin-in - out weapon
+- Improved inventory name of the weapon whether to tell if the magazine is on or not
+
+## [1.0.0] - 2019-09-09
+- Created custom input with beautiful UI
+- Added a addition method where user can be waited for the input
+- Exported those 2 functions
+- Replaced new input box with the old one where's using with the pick and drop
+- Added bullets system where we can fill in the magazine
+- Use custom UI when tryna fill
+- Added weapon shop system with a beautiful category UI
+- Added the close button to the WS UI
+- Added the back button for the WS UI
+- Adjust the magazine to be like ( when running out of it . Make it disappear)
+- Removed/hide bullet section from the WS [ LOL ]
+
+## [1.0.0] - 2019-09-10
+- Design the vehicle UI [ Speedometer , loc , and more ] [ on - going ]
+- Fixed the bug when tryna pull the Mag out when bullet meets 0
+- Fixed the (withMag) shown with the items with .. ( forgot lol )
+
+## [1.0.0] - 2019-09-11
+- Finished the vehicle UI and it is ready to be used
+- Added the event for updating the vehicle speed
+- Added fuel to vehicle UI
+- Added fuel system
+- Get the vehicle max-speed and the current speed and calc it to be as KMH and the find the percentage and sent to the HOOK
+- Added No-reticle which disabling the crosshair of any-weapon
+
+
+## [1.0.0] - 2019-09-12
+- Created the new version of custom-progress with minimal looking [AF]
+- Found out that the crashes problem still detect even in the new JS
+- Fixed the crash problem by removed the thread native [ BUGGED NATIVE WITH 1 SYNC]
+- Improved the awoken_notification to make the screen look clearly by positioning it onto the right side of the screen
+- Changed the font size of the text of awk_notification
+- Align the text to right > add the width to the root which is (UL -> LI) to make the weird behavior bug gone
+- Fixed the shooting problem caused by the skippednextreload which triggered every frame >> moved to the separated thread and then assign the WAIT to it
+
+## [1.0.0] - 2019-09-13
+- Creating vehicle customization
+- Added sub-menu support
+- Added sub-menu choice
+- Added refresh menu on update
+- Added Onbuy event
+- Added preview event
+- [ More part will coming ]
+- Added tattoo system [ only preview ]
+
+## [1.0.0] - 2019-09-14
+- Vehicle customization may now saved and loaded [ ONLY PROBLEM IS WHEN PLAYER PUT THE VEHICLE BACK TO THE GARAGE AND TAKE IT OUT AGAIN ]
+- doorlock system
+- Added custom-map police doors  [ double door also ]
+- Disable normal game dispatch
+
+
+## [1.0.0] - 2019-09-15
+- Added stunGun
+- Added logic to weapon_system where some weapon doesn't has to be reloaded
+- Improved weapon_system where people already hold the gun and tryna put another items out
+- Added elegy to vehicle shop
+- Change html background size to be sized-cover and position> center center
+- Dead state will be triggered when player reconnect -> will automatically send to the thread where we virtualize the dead of the player
+- Fixed tattoo disappeared after networkRecurrectLocalPlayer => Call the reload function again after all of the process is done
+- Fixed LSPD hole by disable the lspd extended map
+- Design a game-Text UI which will be support Thai language [ On-going ]
+- Holding item can be loaded now with proper timer check
+
+## [1.0.0] - 2019-09-16
+- Added Dynamic Game Text With Color and Minimal-Border
+- Disabled Old Hospital IPL in BOBIPL -> base
+- Fixed mistaken UpdateHoldingItem
+- Weapon on hand are now synced with bullets [ Interval-Update ]
+
+## [1.0.0] - 2019-09-17
+- Change the interact-menu to be always on - display when triggered the menu [ later check of each func by itself ]
+- Added cuff system with animation
+- Added progress for the cuff
+- Added new car hud
+- Done cuffing system
+- Added a player Menu on F6 [ JUST UI ]
+- Improved logic on inventory items on floor > [ Replace getclosestobject by DoesObjectOfTypeExistAtCoords]
+- Check if visible and then show the crosshair [ INTERACT LOGIC IMPROVE ]
+- Player may now lift other player with amazing code
+- Improved Fuel to sync with passenger [ VEH HUD ]
+
+## [1.0.0] - 2019-09-18
+- Added a progress with an infinity loop
+- Added an info graphic to show whether the action of the player is doing in that time
+- Added function to clear the previous game text
+- Added fishing system with an amazing control
+- Added generate random fish
+
+## [1.0.0] - 2019-09-19
+- Improve AWOKEN_TRACE
+- Redesign Loading UI
+- Added global sync object and useful callbacks <  INCREDIBLE MOVE >
+- Added Force-update
+- Added respawn_timer interval for all synced objects
+- Added more tree
+- Added map icon
+- Added prevention from update when away from point 300 radius
+
+## [1.0.0] - 2019-09-20
+- Added Miner jon
+- Restructuring the tree job to be easily re-useable and more dynamic
+- Added timer to the animation to prevent infinity anim
+- Added safe interval update object rate to prevent lag
+- Added random.seed to the random_thread > server-sided
+- Added Trash-job
+-- Added trashed_item
+- Added Crop Job
+- Added check on trailer touch the crop
+- Added a menu for a job
+- Added RENTAL_VEHICLE Resources > smart move
+- Added Particle fx on harvest crop
+- Fixed a random on global_object > server_sided [ Move random seed out of the loop ]
+- Improved awoken_engine to allow a people with rent car can turn the engine on
+
+## [1.0.0] - 2019-09-21
+- Added new market framework with a very perfect UI [ unfinished ]
+- Market framework included the picture of the item
+- Market framework prices are now sync
+
+## [1.0.0] - 2019-09-22
+- Market framework is now ready to be used
+- Added cow_job
+- Added a respawning_sync timer for each round of a cow
+- Added weed job
+- Added a craft-table resource [ still in dev mode ]
+- Added craftTable items
+
+## [1.0.0] - 2019-09-23
+- Improved craftable items logic and other [ still unfinished got a lot of thing to do => remained only the craft part ]
+- Improved logic on the online playground [ Craft-table ]
+
+## [1.0.0] - 2019-09-24
+- Continued developing on the craft-table
+- Finally done the craftable
+- Added a progress for crafting
+- Improved the craft_table by adding the interval_timer to support the custom timer of the craft time
+- Added a crafting_progress which is the same type of the fishing system
+- Improved a weed job to be able to sell weed[processed] to the npc[s] with a beautiful random phase and price
+
+## [1.0.0] - 2019-09-25
+- Try working on bed system [ Added a hostital_resource but got nothing to do with it yet]
+- Added Rental Vehicle lock system to a playground command
+- Improved a logic on manual_crafting to be more alike of the craft_table system
+
+
+## [1.0.0] - 2019-09-26
+- Improved rental_lock to be able to press L
+- Added a custom progress to a rental_lock system [ normal vehicle re-used ]
+- Use rental_veh instead of dummy veh-create of police system
+- [ Be working with the criminal system ]
+- Crimianl system was successfully done
+
+## [1.0.0] - 2019-09-27
+- Created the useful snippet
+- Added prison map
+- Saved the coords and preparing to use
+
+## [1.0.0] - 2019-09-28
+- Added prison_resource
+- Jail system was done
+- Added a coords check if player fall thru the map
+- Added bill route
+- Added bill database model
+- Done bill route API's
+- Added price attribute for bill [ forgot at first place lol ]
+- Added view player bill in the police criminal menu > with history included
+- Added extra self menu in F6 > radial menu
+- Added view un-paid bills in the F6 menu
+- Added UI identity system
+- Added timeout after being shown
+- Improved trash_job > wait for ped still then will be able to do an action
+
+## [1.0.0] - 2019-09-29
+- Added vehicle push system
+- Made object global sync support a custom interval time and also random heading
+- Improved particle to be sync or unsync choice => ex. wreck job and cowjob
+- Improved remain check for all jobs that have to do with the remain
+- Removed the old car wreck one and re-created the new one
+- Added miner particle effect on hitting rock
+- Added wooding particle effect on hitting the wood
+- Added dymamic tree fall down [ Tree falling thru map because there's no real collision for that object ]
+- Added hospital resource
+- Added sleeping on the hospital's bed system
+- Improved a check if the bed is taken or not [ Is - free ]
+- Attached player to the bed instead of setting the position
+- Added a table to store each bed configuration based on the bed hash
+
+## [1.0.0] - 2019-09-30
+- Added Moveable bed
+- Added Pull the wheelup [ Prevent stuck ]
+- Added place the bed in the amb
+- Added a perfect spot of detection with marker
+- Added checker if the bed is already exist in that amb
+- Added get the bed out from the amb
+- Request for control first before set the cow health to 0
+- Use SQL for twitter [ Prevent the mess ]
+- Added wallpapers for phone
+- Added additional thai languages config
+- Change the house owner from fullname to _id instead
+- House inventory are now saved and sync
+- Trunk inventory are now saved and sync
+- Hunger Are now saved and sync
+- Thirst are now saved and sync
+- Added show_id in interaction_menu
+- Added custom height check when player has been dropped from high ground level [ Will be use for death system too ]
+- Fixed registeration bug => fix by InitialPlayerData likes when loaded after logging in
+- Hide other player when registeration
+- Added a clothes-off outfit when customization player
+- Added cached entity when selling weed
+- Manual craft system
+- Fixed tattoo coords
+- Doctor job may now rent the vehicle and rent the bed
+- Disabled Jerry Can fuel [ Wait for custom coding ]
+- Improve weed check if it's a player
+- Removed retuurn car from police menu
+- Give bill with notify [ But without animation yet ]
+- Rent tazer gun for police job
+- Remove motocycle from vehicle shop
+- Added menu_ buy and market for MINER AND WOOD job
+- Change inventory key to f2
+- Change mobile phone key to [M]
+- Limit the realistic cover of the phone
+- Set no-shoe and no pant to be the default when first come to the character_customization screen
