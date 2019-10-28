@@ -1,7 +1,7 @@
 <p align="center">
   <b>: New Status Bar :</b><br>
   <br><br>
-  <img src="https://uppic.cc/d/5FiZ" width="800" height="600">
+  <img src="https://www.mx7.com/i/169/u7ORr9.png" width="800" height="600">
   <br><br>
   <b>: New Inventory Design & Proximitely Item ( สิ่งของที่อยู่ใก้ล ) & Weight ( น้ำหนัก ) :</b><br>
   <br><br>
