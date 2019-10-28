@@ -513,3 +513,378 @@
 - Change mobile phone key to [M]
 - Limit the realistic cover of the phone
 - Set no-shoe and no pant to be the default when first come to the character_customization screen
+
+## [1.0.0] - 2019-09-3
+- Improve notify on jail time => showing total amount of 7 seconds
+- Disabling seat shuffle => preparation for the pull out of vehicle => police system
+
+## [1.0.0] - 2019-10-4
+- Improve Prison system checker
+- Improve Prison when player is sent => detach from every entity
+- Uncuff player when player is sent to the jail => [ Prevent conflict ]
+
+## [1.0.0] - 2019-10-6
+- Increase length for rental lock and put player in venhicle
+- Put player in vehicle with seat choice
+- Pull player out of vehicle with bad chcker
+- Improve pull player out now system is now dope
+- Improve the checker logic and do the dialog significant if the player is in that seat > show red text
+- Added Frisk System
+- Added custom input to the frisk system
+- Finish Bill system => complete implementation => [ Remain only pay method ]
+- Done bill payment method
+- Added a spot at the lspd
+- Limit the range of Drag And Seat Crontrol system => prevent text happen from long range
+
+## [1.0.0] - 2019-10-7
+- Moved the notify on item-detecting to pick up from INVENTORY => awoken_core
+- Removed the trash trace from weed job
+- Change the Drop item to the new awoken_core system
+- Added awoken_core system where objects are all synced with all player
+- Commented the un-used old object in inventory resource
+
+
+## [1.0.0] - 2019-10-8
+- Added a true length of draw rect with text system [ Beautiful ]
+- Added return vehicle system ( Support up to more than 1 points)
+- Added Custom return money
+- Change the spawning area of police point
+- Adding a guild marker system on the rental vehicle that just got spawned
+- Fix the pickLock to also SetVehicleLock to 1
+- Prevent from entering the random spawned vehicle
+- Added return point for doctor job
+
+## [1.0.0] - 2019-10-9
+- Added a category for inventory system
+- Added a error handler when the object is bug / missing
+- Improved the safe load object when the last saved object on hand is not exist in the system
+- Change the name of all the tool / food and weapon to be compatible with the category system
+- Change the name of the items that were changed also in the awoken_market_framework
+- Replace the new calculated drawrect
+- Changed all weed stuffs to compatible with the category system
+- Extended the size of the font in the inventory system and also the holder of it self
+- Change all the items that supposed to be a Material type to what it needs to be
+- When rent the crop vehicle => suddently automatically attached the trailer to that Tractor vehicle
+- Added clothes shop system
+- Added a preview system for clothes shop
+- Added some clothes to clothes shop
+- Added on exit menu and restore previous clothes
+- Ported the shop / weapon buying menu to use the lastest market framework
+- Fixed the lockpick from check the old name without TOOL-
+
+## [1.0.0] - 2019-10-10
+- GetClosestPlayer is now filtering the not visible player out of the sight
+- Added a naming tattoo system when try to append it ( later for removal )
+- Added a removal tatoo depends on the name that player given before when trying to append the tattoo
+- Added costing money when try to remove a tattoo
+- Improve draw text with rect support with custom font-size and a dynamic width
+
+
+## [1.0.0] - 2019-10-11
+- Scale up the size of inventory 1.25x
+- Added all 24/7 shop
+- Changed strcutre of shop market
+- Separate the shop type and made the itemList dynamically in the config file
+- Added vehicle customization
+- Added a point for each stop point of veh_cus
+- Moved save_vehmod to awoken_vehicles ( old from awoken_vehicle_customization )
+- Optimized awoken_core => object by showing what is on the floor and placeholder the amount that wanna pick
+
+## [1.0.0] - 2019-10-12
+- Vehicle recieve now will be checking based on the netId ( same old shiet xD ) [ Prevent Enumerating limitation ]
+- Removing player from instance if trying to respawn at hospital inside the house
+- Added checker for prey [ DRAG SYSTEM ] if the hunter is exist or not
+- Added economy system
+- Make market framework supported with GCBOURSE
+- Add initialize when first run of gcphone => execute the initial event in market framework
+- Improve economy system with stable phase and on price decrease
+- Done economy system [ STAGE : 1.0.0 ]
+- Comment the shift + x in the awoken_voice
+- Change the non-network bed to settheentity pos instead of attached [ Prevent floating bug ]
+- Change the animation of the player in laying down bed [ Prevent floating bug ]
+- Added menu for wreck job
+- Added wreck items to the market framework
+- Added menu for fishing job
+- Added menu for trash job
+- Added a Antique Shop for => Trash job
+- Make interact-core supported with the awoken_hospital[BED] by putting the variable into the temp data
+- Added place player on the bed
+- Added pick player from the bed
+- Adjust the dead time to 600 second => ten minutes
+- Disabled lifted player trying to lift other player
+- Added lifting and enter/exit instance
+- Disable house menu on lifted
+- Disable using item on lifting or lifted
+
+## [1.0.0] - 2019-10-13
+- Added a eventHandler of using object in another resource [ NEWLY OBJECT FROM NOWHERE ]
+- Added a python script that will generate a code for creating 1 item for us
+- Added mask system
+- Improve clothesData to be able to handle shared clothes [ GENDER NO MATTER ]
+- Added mask shop
+- Added left => holding item
+- Make awoken_inventory => holding object phase be able to attach thee left hand side
+- LATER WILL DO NEW LEFT DROP / GIVE  ANIMATION [ WILL DO !!!!!!!!!!!!!!!]
+- Added barber Shop
+- Added sit on the seat => playing with scenario
+- Added 4 seat in Luxery barb
+- Perweek [ in commit ]
+- adjust scrollbar of awoken_menu to scroll-top when newly menu appended
+- Added hotWire => will be using later
+
+## [1.0.0] - 2019-10-14
+- Added UI for crime-alert
+- In progress [ doing the UI => crime alert ]
+- Updated Hair to request for skin-changer to get the maximum value of possible hair
+- Added safeload for chacracter creation => add while awk==nil => holder
+- Added badge and adjust the img size to compatible with all size
+
+## [1.0.0] - 2019-10-15
+- Added skin-hair desc
+- Remove empty css style
+- FindClothesData now starting with the false => prevent from nil
+- Change the css => crime_alert to absolute => first there was a problem but now it's gone lol
+- Mapped all clothes-data
+- Adjust card size
+
+## [1.0.0] - 2019-10-16
+- Changed from flash to another animation => [ Prevent conflict with the absolute => opcity 0]
+- Added custom timer for awoken_game_text
+- Added Location for crime alert
+- Added a info on reached the crime point
+- Added a treehold for a info-text after the reached_point game text was shown
+- Moved the function into is player a cop
+- Added AWK.IsPlayerACop() to the awoken base
+- Prevent Dead player to use the inventory item ( To be held the item on the hand )
+- Prevent Dead player from crafting the item
+- Fixed the progress size of zeroloadinganimation
+- Added return false of the dead checker before using item
+- Added prevention from taking off the clothes
+- Added AWK.IsPlayerADoctor() to the awoken base
+- Added on press E when the time still going on in awoken_death
+- Added a type of alert whereas 1 == police and 2 == doctor in the UI of crime alert
+- Added condition to select whether which post data will be send to the Registered ui callback
+- Added doctor Badge
+- Added Emerge in progress functions & events
+- Added a custom delay time per signal to the awoken_death
+- Resetting the signal timer when the death is being initialized
+- Added SAVE_DROP_TO_GROUND_IF_STILL_DEAD to the awoken_death system not including with the [ LOADED DEAD ]
+- Change emerge signal key to [ H ] from E
+- Added gender to gametext when reached to scene point
+- Added AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION() to awoken_base
+- Applied AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION() to the awoken_core when player tryna picking up item
+- Fixed invalid or and condition of IS_ON_DISABLED_TO_INVENTORY_ACTION
+- Show help-text to picking-up the item only when player is not IS_ON_DISABLED_TO_INVENTORY_ACTION
+- Check on awoken:antiFallOff2 if Player is-Dead don't un-frozen player ( Prevent from loaded Death)
+- Added clothes data for female in crime-alert
+- Load shared resource first in   awoken:antiFallOff2 [ Forget lol ]
+- Added shared_wait for awoken_death ( Prevent nil )
+- MAPPING THE DESC and then passing to the server-side ( first we did it wrong lol )
+- EXPORT MAPPING DESC for awoken_death to use => need to generate the player information first
+- Fixed the biggest mistake of MAPPING DESC
+
+## [1.0.0] - 2019-10-17
+- Changed the old item-name with out the prefix to the prefix one => awoken_craft_table
+- Awoken => status new design is progress => [ will be using the png progress bar => PRIORITY LATER ]
+- Changed hat prop to cap
+- Changed some set of png inventory
+- Added z_adjust for core => currently 0.25
+- Added pick-up range
+- Inventory craft button => position absolute
+- Added effect confetti on hit the craft button
+
+## [1.0.0] - 2019-10-18
+- Design final inventory UI
+
+## [1.0.0] - 2019-10-19
+- Apply the new inventory => (normal work normally) [ UNFINISHED-=> prox_obj => other section]
+- Proximitely pickup done
+- Dynamic itemsData for => awoken_inventory and awoken_market_framework
+- Added mapping function [ Clonning ]
+- Added eventlistener on js [ clonning between inv and market ]
+- Added safe delay for javascript to be loaded first => 2000 is the current millisecond
+- craft_table < Ignore for now >
+- Items on hand box update_UI
+- Category done
+- Fixed missing .. split in HOLDING_UI
+- Added AWK.GetWeightFromItemLists
+- Added GetPlayerMaximumCarryWeight => default was 240.0
+- Mapped the weight also in the MAP_ITEM_CONFIG_TO_JS
+- Use toFixed to show 2 decimal places
+- AddPlayerItem now will be return true or false if the capacity is ok or not
+- KeepItemInPocket now check if the addPlayerItem is success or not => then clear the holding item if yes
+- Added AWK.CanAddPlayerItem() to check if can add the item => logic just like the addplayeritem but only do return type
+
+
+## [1.0.0] - 2019-10-20
+- Added Beta weigHt
+- Added AWK.CanAddPlayerItem() when player giving item
+- Added AWK.CanAddPlayerItem() to the thread where prox_obj was being picking up
+- awoken onFirstSpawn in awoken_account removed the line where setting the player location [ Hope it fix the instance bug ]
+- AWK.CanAddPlayerItem() on player buy item from middle market
+- Added clothes section and fixed the bug that i was using  Js language (!)
+- Added refresh the section when newly openning again
+- Moved the animation on pick-up to the main thread where the real use is => perfect timer 700f 700b
+- Changed styles of custom input
+- Added a trans style of inv_item_holder
+- Done trunk N frisk but without capacity yet [UI_UPDATE_ITEM_ON_HAND(item.holding)] add to view trunk and other things
+- Hide the other_inventory when the player is opening the inventory => and not !isupdate
+- Weight on pick from trunk [ On -going ]
+- Added check in the addplayerItem where the capacity is being calculate if the itemData is not exist in the config file return false and send the notification
+- Added check weight for giveitem and house and trunk => ignore weight if only get 1 item
+- CanAddPlayerItem check thread move down until the finalitemname is done generating
+- On frisk check weight also
+- updateInventory_UI() => remove if condition from it ( So it will be triggered everytimes ) => Prevent viewing the other_inv with the old value
+- uodateInventory_UI() reverse back to the condition ( performance stuff )
+- Added updateInventory_UI_FORCE() which will ignore the condition and use for everytime the other trunk was open
+- On right click craft and then reverse back to the adjusted color ( transparent )
+- Fixed pant but ( PANT pants => uppert not found ) => fix by manually added the pair table and pretend to create PANTS
+- Added gta-iv minimap
+- Added AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION() to litter-N-Bed and also lifting
+- Design MICRO INVENTORY UI ( NoPixel Style )
+- MICRO INV UI EXPORT => 1 useful func
+- Applied micro inv UI to awk.base
+- Comment all old notification in awk.base
+- Adjust the pic width to 88%
+- Update the realistic set of PNG INVENTORY
+
+## [1.0.0] - 2019-10-21
+- Created new image progress bar plugin
+- Applied new status_UI to the awoken_status
+- Added red_money resources
+- Added redCash [ Red money ]
+- Adjust the top position of progress-bar
+- Fixed mistaken trunk.lua in inventory
+- Inventory make the cash => redCash priority to the first as second in the inventory
+- Removed type and volume args from AWK.AddPlayerItem and replaced with keep => true or false
+- Added MICRO_UI TYPE FOUR[4] for keep label
+- Added condition in AddPlayerItem for keep or not and then SEND TYPE 2 or 4
+- Added entrace system
+- enter exit [ Normally working ]
+- same re-useable place but with different instance [ on-going ]
+
+## [1.0.0] - 2019-10-22
+- Adjust all blips size to the appropiate one using [ CTRL + SHIFT + F ]
+- Done entrance system with the re-useable flag
+- Entrance system make the reuseAble type when at point 2 iterate all over the reuseable point and check if the hash is match then exit
+- Added handler if entrance system can't find the data => set to the random exit point instead
+- Added awoken shared inventory resource [ Will be very useful if it is finished ]
+- Done shared inventory get keep open
+- Made 3d_confirm custom function callback
+- Export SHOW_INVENTORY may now can be recieve addition information about other
+- Show information on opening ther inventory
+
+## [1.0.0] - 2019-10-23
+- Change structure of shared inv to be able to gain extra value
+- Adjust some inv prox item and on hand styles
+- Disabled on pressing E to pick up item => forcing them to view in F2 ( New window )
+- Remove check from where the prox_ will get update
+- Showother inventory now will be set display=true => to be able to get the prox item updated
+- Added IS_INV_ACCESABLE to check if the inv is access able right now
+- Added API-SERVER SIDED
+- Added red_money on server side and triggered the api then do whatever i want
+- Added sync_machine_data
+- Added function for setting the machine data and then triggered all client event then set the data
+- Added check on the main thread whereas we showing the label and also the control pressed method
+- Added in - progress label
+- Done awoken_red_money
+- Added AWK.settimeout and cleartimeout on the awk_base_ server
+- Applied to the red_money on cancle event
+- Added awoken_synced_prop
+- Added preview function
+- Added export to the resource
+- Added dynamic generate prop and all the data that needed
+- Added press H to remove one of the closest prop
+- Added create_item in the Config_prop_list
+- Added prevention if the fetched object is already exist
+- Added safe delay interval in the Config file
+- Added invalid prop name handler [ 5 sec ]
+- Added prop_list for hospital_system
+- added AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION_PREY() to the awoken_base [ got_lifted and dead only ] => vanilla [ lift included (HUNTER) ]
+- Applied AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION_PREY() to the entrace system where player doesn't has the ability to enter entrace
+
+## [1.0.0] - 2019-10-24
+- Added new MICRO_UI for knowledge type
+- Timer duration are now set-able in the MICRO_UI new knowledge type
+- Added DeadCause and DeadRelatedPlayer in the User Schema
+- Trash job prevent help text from cached bin
+- Added Locale for a prettier formatted
+- Prevent double dead in the water by adding SetPedDiesInWater(ped,false) to the awoken_death
+- Added awoken_disable_native_hotwire to disable the native hotwire
+- Added 4 main red-money point
+- Added med-take point for awoken_doctor
+
+## [1.0.0] - 2019-10-25
+- Added Diagnose items
+- Skip the part in the add_item python script where the js take place ( skipped because now the system is more dynamic than that )
+- Make custom_menu support title name
+- Redesign of awoken_menu
+- Make awoken_menu responsive to any screen_size
+- Final desgin of awoken_menu
+- Added label for garage menu and house menu
+- Added enter_doubled prevention safe delay for awoken_menu
+- Added delay after the enter being pressed [ 1 sec ]
+- Adjust awoken chat to the right and change the font
+- awkoen_menu now need to do with the scroll and pos vh to vw
+- AWK_MENU THE SIZES ARE NOW FIXED
+- Added HasCollisionLoadedAroundEntity in to awoken_useful => anitifalloff both 1 and 2
+
+
+
+## [1.0.0] - 2019-10-26
+- Added awoken vehicle core
+- Added label to the closest trunk N hood
+- Added find the owner_network of the vehicle and condition on do vouch task
+- Added perfect range and smart detection for the awoken_vehicle_core
+- Inventory view F2 to view the trunk
+- vehicle_core now set the tempdata to point to the in-sight vehicle
+- No more empty return from the open trunk send => {} instead for beautify
+- Added dynamic label => open nor close condition
+- Added condition to check when the 3d is confirmed => AWK.GetTempData().current_trunk == GetItemFromTrunk.Vehicle { check if the vehicle still in sight }
+- Added additional text info == for vehicle trunk
+- Dynamic timer check for the open_ratio after triggered the task => if successful then will show the help text => 1000ms
+- Added Get the native lock status to prevent openning trunk/hood from locked npc car
+- Disabled inventory_house on eye point to the pos => awoken_interact_menu
+- Added label for house_inv and also the help text
+- Added key left alt to open the house inventory
+- Added addition info for house inv_text on other_info() will be rendered
+- Disabled function on lookin at vehicle = > only pointing the eye contact png
+- Radialmenu disable cycle type class => shift menu
+- Replaced hood N trunk find closest car with local vehicle = GetClosestVehicle(GetEntityCoords(PlayerPedId()), 4.0, 0, 71) instead of getvehicle in direaction / infront because the precision of that calculation is really pretty bad
+- Turn face to the veh before opening the hood/trunk
+- Later will do on turn on house inv [ WILL DO ~~~!! ]
+- Moved the inv_pos of default house inside of the cloest where the perfect heading will be occurs :P
+- Turn ped face on house inv done
+- Handler if can't find the exit point for the house
+- Showing the house blips only for un-sold one
+- When the house is bought remove the exist blip
+- Removed the collision check from awoken_useful => anti_fall off both 1 and 2 ( useless )
+- Added remove house command
+- Added AWK.SendClientMessage and Added AWK.SendClientErrorMessage
+- Set default color table ( r,g,b ) to light-green
+- Added 2 useful house_interior
+- Added tree and altstreet to optimized street for more realistic
+- Added inv_data
+- Awoken House get distance between coord now use the Z ,true <=  was passed
+- Fix iteration when inside-the house and trying to fix [ Loop thru all exist house_inside first then . . . ]
+
+## [1.0.0] - 2019-10-27
+- Handler on instance==main but got inside to instance and can't find the way out
+- Added AWK.Print3DText Mythic  syles
+- Added handler on type invalid => create house commands
+- Added new house type => 3
+- Added bed for the house type => 3
+- Change marker style to the final version
+- Range change to the default of 8.0
+- Added lock_picking core and all of the resource
+- Lock_picking in stage [3] out of 5
+- Will do awoken apartment system [ in - progress ]
+- Added Apartment mongo - models
+- Aps create - remove
+- Make Aps system dynamic => with entrance system working together
+- Added useful APIS for awoken_entrance
+- Added awoken_js_util => [ In - progress ] => will be use for check if the time passed x day then eject the old owner
+
+## [1.0.0] - 2019-10-28
+- Added awk_audio [ In - progress ]
+- AWK_AUDIO FINAL STAGE [ REMAIN ONLY IN APARTMENT VOICE / INSTANCE ]
