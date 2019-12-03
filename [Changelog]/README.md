@@ -888,3 +888,580 @@
 ## [1.0.0] - 2019-10-28
 - Added awk_audio [ In - progress ]
 - AWK_AUDIO FINAL STAGE [ REMAIN ONLY IN APARTMENT VOICE / INSTANCE ]
+- Js util => checking the date passed is done
+- Apartment system now can be rent
+- Added handler return money if the purchase isn't succeed
+
+## [1.0.0] - 2019-10-29
+- Added lock animation and perfect range to apartment_system
+- Check if ped it standing still before doing lock nor unlock
+- Added warning notification on moving
+- Added new type of house
+- Swap house 1 2 to normal_small aps and grove street and 3 4 is wood 2 floor , and beautiful house
+- Added main location of apartment blip
+- Added Js modal utils
+- Captured all house detailed picture
+- Added house pic array to a dynamic one
+- Added preview houses system before buying
+- Apartment on entered if the door is locked also calling the CLOSE_MENU() to close the menu
+- Added really smart condition finding whether by getcloset veh or if not get_veh in direction but mainly focus on closest veh
+- Added smart check on awoken_audio => check if the player is visible or not condition
+- Diagnose on player with the animation done
+- Added AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION to prevent doing Diagnose without Approp situationn
+- Check if player is stopped or not => then they'll have the ability to drop player that being lifted
+- Closed the ability menu when the action is succeed
+- Removed return and use goto instead in awoken_native_job_menu
+- Added animation on pick/keep in INV_SHARED
+- Change custom input to 3d confirm
+
+## [1.0.0] - 2019-10-30
+- Added lock apartment inside
+- Added some of the dead cause type malee and knife ( new one)
+- Added progress on locking apartment appropiate name
+- Adjust appropiate progress on lock house just like an above
+- Check the weight before renting the key and buying the aps => Apartment system
+- Check the weight on houses system also
+- Added smart load check for houses when got restarted just like an apartment
+- Added only owner blip if you are owned the house
+- Improved inventory blank holder
+- Fuel remove player money
+- Added check to the exist thread in fuel if player is running out of the money stop the fuel
+- Added check before starting the fuel thread if player has enough money or not
+- Added check if player don't have the money to pay or somethings wrong => remove all player money in that moment instead
+- [ FUEL CACHE WHEN PUT VEHICLE BACK ] => { wil ldo }
+- Added a return vehicle to the garage array
+- Add bodyhealth enginehealth and fuel to the AWK.getVehProperties and also making SetVehProperty go right
+- Only able to return the vehicle if the player owned that car
+- Adjust fuel price to *4.5
+- Now vehicle engine dirt body and fuel are saved
+
+## [1.0.0] - 2019-10-31
+- Added howler for awoken_pick_lock core
+- Added detection point for lockpick => just like vehicle core
+- Added animation on lock_picking
+- Clear on holding lockpick when failed
+- Done lock_pick core
+- [ MAY BE CHECK VEHICLE CLASS ] => might be useful for it
+- Added on quit picklocking
+- Added save current pin_health to lockPick
+- Added on success also set the pin_health
+- Added report on picklocking
+- Passed the fix args to the awoken_get_currentHolding item to convert the nil to "" empty string instead => useful for checking with string.find
+- Uncomment bad work from awoken_audio!!
+- Fix on crime-alert not precision because of the round position
+- Fix the emergency coords to the precise native one
+- Added true type coords for crime-alert => ( If player is in the house -x pos will be sending to the external of the house )
+- Fixing lock-inside apartment [ Done - but there is only 1 bad code related from entrance that hashed the data don't know why i was doing that in the first place ]
+- Disabled all exist NetworkClearVoiceChannel & NetworkSetVoiceChannel & NetworkSetTalkerProximitely
+- Mainly focus at the wrtc new audio type
+- AWoken voice now don't do anything anymore
+- Added paying rent system
+- Added info text in the up-coming paying rent period and can't miss that
+- Added AWK.GetPlayerData().Cuffed on inventory_disabled action
+- Check if job == police then can do the drag control
+- Added hand type separeate from hard_malee
+- Change the calc of the healthbar in awoken_status to use the total 200 health then minus with 100
+- Change the clothes index of doctor and police
+- Added AWK.InAChanceOf
+- Added chance in selling the weed normal = 45 and another 50 50 for calling the police or not
+- Added alert on selling drug
+- Added the redCash instead of normal cash when selling the weed
+- Added save player health
+- Added a check if the health is setted or not
+- Added damaged walk script
+- Added awoken_disabled_drop_native_weapon
+- Added enter_seat lookin at
+
+
+## [1.0.0] - 2019-11-1
+- Added weapon damage controlled
+- Added clothes section
+- Added weapon_on_back with custom awk config
+- Added facial animation on talking with the new audio
+- Adjust damage of all malee weapon stage:1
+- Added delay of awoken_crime_alert
+- Added AWK.ShowNotificationWithColor
+- Hotwire system done with show beautiful notification
+- Hotwire adjust notification color
+- Change hat and mask prop
+- Check if on foot => lock_pick
+- Change to awoken_minigame_core
+- Audio encry => minigame encry
+- Removed voice from gc-phone
+- Punnished ment on hungry - thirst
+- Saved health use smart wait
+- Updated hair desc in crime_alert
+- Added selling fish
+- Fixed market framework
+- Removed bug car from vehicle shop
+
+
+## [1.0.0] - 2019-11-2
+- Fixed police rent item
+- Added wait in awoken crime alert before triggered the event
+- Fixed eating item with qty bug
+- Fixed a hugh AWK.IS_ON_DISABLED_TO_INVENTORY_ACTION that return false in a loop
+- Changed voip interval
+- Report crime on picklocking after the car is unlocked
+- Fixed right click on phone
+- Disabled npc-car jacking
+- Added awoken_disabled_close_combat
+- Added [vehicles] scripts to make a car system more realistic
+- Ragdoll stop lifting prey in interact_core
+- Voice now adjusting with the awoken_audio but same problem as fivem
+- Base removed the old damn print
+
+## [1.0.0] - 2019-11-3
+- Create WalkieTalkie
+- Tryna make a detection of the water for fishing system
+- Moved inventory holding object => into base and use the awk spawn_object
+- Stop awoken_core from using export => to inventory => to stop exportion error when restarting the inventory [ NEEDA CHECK PERF ]
+- Adjust the holding config of the left_handed item
+- Added holded wait for triggering server_callback in awoken_vehicle_shop to prevent doubling event being called
+
+
+## [1.0.0] - 2019-11-4
+- Added wormPrey
+- Adjust image size of width to the auto
+- Added wormPrey system
+- Added wormprey to the selling place
+- Fixed amount on trunk & house => semantic wrong lol => always  + 1 changed to + amount
+- Done Vehicle weight system
+- Added prevention from trunk exploit
+- Added stringsplit to server-sided
+- Added prevention from house inventory exploitation
+- Added prevention from exploit in the shared inventory which use in the aps and other etc... likes red-money
+- Added error prevent from fuel at the old line : 39 => wait for a long trace
+- Added baseballBat Weapon item
+- Fixed the position of baseball bat
+- Added set of crafting item
+
+
+## [1.0.0] - 2019-11-5
+- Add cigar
+- Added custom for item_config to store a custom coords
+- Replace all Native random [ +1 ] with AWK.RandomNumberBetween_Int
+- Done smoke system
+- Disabled awoken voice system => make all the voice equalent in the first use
+- Change the key of the craft table
+- Finished public craft place
+- Added craft item
+- Added craft_item conf
+- Added special item for each job
+- Changed the position of the smoke looped effect
+- Fixed the identity system
+- Removed the normal craft weed from the inventory
+- Change the physic of the litter to be no collide
+- Added baseballBat to the weapon shop
+- Added lighter and cigar into the market
+- Disable press E on the native bed
+- Added mythic hospital with the minimum cost for curing your self
+- Added main market
+- Disbaled init market for wood miner and wreck job
+- Added selling place for beef and crop
+- Disbaled it native selling
+- Changed proximity talking
+- Added dark buying item
+
+## [1.0.0] - 2019-11-6
+- Added handler for invalid model in vehicle shop
+- Change the letter plate index to 3 3
+- Added realistic driving by
+- Adjust damage for fist and bat
+- Loaded for the anim first => in vehicle push
+- Added anti push_veh on roll > 75.0
+- Added vehicle fall tyre burst
+- Changed crime alert button
+- Changed radio button
+- Added realistic vehicle damaged
+- Added seatbelt ragdoll controll when over => 180
+- Added wrapper.lua to awoken_base to make the esx menu compatible with
+- Added [ui] which actually came from the esx_menu
+- Added esx_animations
+- Adjusted the condition on open the animation menu
+- Added a custom condition check for each scenario and custom_anim that were played will be storing in the cached data
+- Changed damaged_walk to the custom_walk_utilities whereas the esx_animations will be calling if the walk_preset are requested
+- esx_animations done
+- Added realistic Fixing system
+- NO => Replaced the meeta_damage with the awoken_custom_damage ( BUG WILL NEED TO REWRITE)
+
+## [1.0.0] - 2019-11-7
+- Added process Item core
+- Added custom congrat animation
+- Added range check once for entering marker notification
+- Adjusted cutting tree item
+- Adjusted mining Item
+- Added milledRice
+- Added rice Process
+- Added diamond selling place
+- Added gucci belt selling
+- Added handcuffKey to unlock the people's handCuffed
+- Added rob system along with the interact menu
+- Added knockedOut system
+- Added buying phase to police
+- Fixed on death with knock out
+- Removed police from blacklisted in the lscustom
+
+## [1.0.0] - 2019-11-8
+- Added isItemStatic to check if it is static or not
+- Added custom whitelisted garage
+- Requesting the network first before setting the plate up
+- Set the plate not on vehicle propertie but on the database itself => [ more safe ]
+- Added auto-swapping item
+- Added auto-sawpping on unlock with quick mode
+- Added custom thai lang car model on police
+- Added clear inventory commands
+- Added carKey check => if don't have give em => if having more than 1 => set it to 1
+- Quick unlock not working when holding the weapon on hand
+- Disabled crosshair-eye on aiming
+- Added check if having the key that player shouldn't have => (carKey only for now)
+- Added anti static item got stolen
+- Register the car to the exist _ netId also when newly created vehicle
+- Register the car also when firstly bought from the show_room
+- Set the fuel when newly buy vehicle to 100.0 which mean there will be no more can't starting up the engine
+- Improved realistic drag on ragdoll drop player
+- Added player escaped from drag if not getting cuffed
+- Make drag does public so anyone can use it
+- Improved interact core to realistic as the drag system
+- Added thread to sync between current drag player => use for sync enter instance
+- Added custom animation when knocked and got dragged
+- Added rendered if still in job on vehicle spawn menu
+- Added set of cars and weight
+
+## [1.0.0] - 2019-11-9
+- Updated Realistic Instance system not foot no hit no damage
+- Completely stopping the animation from getting dragged after cancalled
+- Removing the existing playing sound if in the different instance
+- removed the clear phase of the entity in the awoken_custom_weapon_damage ( Prevention conflict between crime_alert with fist )
+- Added entrance exit from jail when player jailtime < 1
+- Disabled on cuffed punch and exit vehicle
+- Added fuelTank item and usuage
+- Added fuelTank to shop_market
+
+## [1.0.0] - 2019-11-9
+- Added the new chracter creation system
+- Added bunch of clothes location
+- Added bunch of clothes
+- Added new clothes to clothes shop
+- Removed process item marker
+- Change K to vehicle menu and L for seatbelt
+- Capslock for Noclip
+- Added crafting handCuff with extra
+- Added repairKit to 24/7
+- Cost money on buying the vehicle
+- Esx animation disabled when trying to play the existing old menu before dead
+- Added connect queue
+- On put bed increase the player health nomatter whaat
+
+## [1.0.0] - 2019-11-11
+- Big performance FIXED
+- BUGS fixed set 1
+
+## [1.0.0] - 2019-11-12
+- VEHICLE FIXED
+- ADJUST CLOTHES ARMS
+- Adjusted hunger N thirst rate
+- Repair system requesting for the control first
+- Disabled pointing the finger on death
+- Added owner checking for police job
+- Close inventory when picked item to prevent bug
+- Inventory performance
+- Status perf improved
+- Trash perf improved
+- LockPick perf Improved
+- POLICE CRIMINAL RECORD PERF IMPROVED
+- Added detect the attacker and send to police
+- Return vehicle fixed
+- crime alert fixed
+- dispatch disbaled adjust the timer
+- disabled interact menu for dead N caugh people
+
+## [1.0.0] - 2019-11-13
+- HARD RESETTING to 1 committed
+- MERGED MEETA CHARACTER
+- FIXED DISABLED DISPATCH PERFORMANCE
+- MOVED INSTANCED AND ON_SAVE from character_creation to the meeta_creator [ PREVENT MORE RES PERF LOSS ]
+- GCPHONE MOVED TO SQL
+- PULLED Location and Blip from Promraungdet
+
+## [1.0.0] - 2019-11-14
+- Added temporary fixed for checking the vehicle_ex from headlight => for fixing the vehicle that the hood not exist
+- Added restriction for all bike models
+- Added pracharath map set
+- Fixed marker of shop
+- Added pracharath vehicles set
+- Added set of cooking items
+- Cook havesting in progress
+- Added havest tomato
+- Added havest corn
+- Addeed havest lettuce
+- Added Police Pound vehicle system
+- Added ability to F7 menu => pound vehicle
+- Added database's model of vehicle_pound_data consist of reason pounder and date
+- Fetch the data everytimes that player press [Enter] on the garage blip
+- Pull the armor_resource and item from [ Promraungdet ]
+- Added armor system
+- Added vehicle_pawn => [ still in progress ]
+- Added some improvement of MEETA_CHARACTOR AND MEETA_CREATOR TO MAKE IT COMPATIBLE WITH AWK
+
+
+## [1.0.0] - 2019-11-15
+- Request the network control first when try to lock on a car
+- Added delay and condition when using the quick lockNunlock
+- Fixed the range of lock_picking core
+- Request control first when successfully unlocking a car by using lockPick
+- Implemented Garage system makes it along with the isStore value which will be using for the vehicle_pawn
+- Applied a valid logic of garage to the => police_and_doctor 's vehicle system
+- Changed a police to police2 => requested self job vehicle
+- Added Pwned Vehicle system
+- Added lists of free-clothes at start
+
+
+## [1.0.0] - 2019-11-16
+- Pull requested from [ Promraungdet ] => included status => location and etc...
+- Fixed cutting tree job
+- Added armor png files to the inventory and added the resource_datailed
+- Make meeta_cooking compatible with AWK
+- Improved meeta_cooking to be able to cook up on 3 peoples at the same times
+- Smart check cached_obj for meeta_cooking
+- Added set of raw_materials
+- Added corn process
+- Fixed logic on FIND_TARGET_CRAFTING_ITEM in awoken_inventory ( now superb )
+- Added set of cooking item
+- Prevent from using the grillSet while in the instance ( later features will be supported )
+- On remove created_obj in the grillSet => use AWK.TRACE to prevent unknown Error
+- Added request control when deleting the grill
+
+## [1.0.0] - 2019-11-17
+- Added milk to cow job
+- Wood job => added amount on special items and adjusted chance of woodGum to 50
+- NetworkSetVoiceActive(false) to disabled player voice
+- Added commands to kick all player
+- Added paycheck system
+- Override styles in custom_input and menu from [ Promraungdet ]
+- Merged from [ Promraungdet ] on 11/17 updated
+- Disable native voip mumble server
+- Fixed instance variable => converted all to string ( entrance core ) ( awk base )
+- Updated food props
+- Added all food type eating usage
+- Added valid_food checking [ Anti - logic exploit ]
+- Added crap Job
+- Make crap job loop thru all special items
+- Prevent doubling onItemUsage called
+- Added a safe_add_radius_z to adjusted the differentation between Vdist and native distance function
+- Change png of shovel (small)
+- Added shovel to workshop
+- Added all processing of crab and also public grill place => working with the cooking system
+- Adjust weight of rawOre and stone and also all those trash obj
+- Added .50 Pistol and it's magazine
+- Added 50Pistol and 50Magazine to market_framework
+- Added the items above to the weapon_shop which requires red-money to buy
+- Pull commited from [ Promraungdet ] ( atm => meeta_prop )
+- Added fish and make its economy system
+- Adjusted fish prey to 0.25 and reduce only 1 when the fish is catched
+- Fixed png name of fish14 to the proper one
+- Weed unit and selling phanse
+- Changed H to selling the weed to left click
+- Added 2 stance of handup system
+- Added busted stance for handup system
+- Fixed bug can shoot while cuffed
+- Disabled run while being cuffed
+- Added take item from hand
+- Disable any combat ability due to the cuffed state
+- Cuffed animation now closed every exploitable method
+- Fixed handup animation => forget to load the animation
+- Added safe check on eating in controller from [Promraungdet]
+- Changed timer of cow stock from 5 to 3 minutes
+- Changed hotWire to 3 pin only from 5
+- Adjusted Tree_zap process => add VehicleTire avialable in the economy system
+- Added vehicleTire selling place
+- Adjusted realistic_vehicle_fall to 12.0 [ 2 floors ] from 18.0 [ 3 floors ]
+- Adjust fixed z range check for awoken_vehicle_core => from 0.0 to 0.25
+- Changed key open trunk to [H] From [Y] => because Y => is for surrendering animation
+- Adjust bed range for new vehicle_model
+- ON CONTROLLED BED => improvement
+- REQUEST THE BED FIRST BEFORE APPEND THE BED TO THE CURRENT ACTIVE BED
+- Added bed return point
+- Prevent sleeping on the bed while on car
+- Crab job fixed undefined amount
+- Meeta cooking add option to remove all placed obj
+- Improve network control when trying to remove a grillSet Obj
+
+
+## [1.0.0] - 2019-11-18
+- Made new design of awoken_registration_system
+- Override the old account system which requires username N password ( now needs only steamID )
+- Made loading fetch to check whether the account is exist or not
+- Added auto login
+- Added check if the skin isn't create yet => then go to the registration phase again
+- Added autosave system
+- Added separate bill types for Police and Doctor system
+- Added paycheck system which will transfer the money to the bank account
+- Added duty toggle on or off by native_job_menu
+- Improvement death logic casued by crime_alert(main) and awoken_custom_weapon_damage system
+- Added ClearPedTasksImmediately(ped) when player got cuffed
+- Set emerge_signal_timer = -99999999999 when first death => prevent server just started ( or player just entered )
+- Set crop job interval spawn to 2 minutes
+- Set entrance_system market visiable in range of 7 units
+- Fixed cutting tree job => ( unknown bug for chance 50 )
+- Clear entity last damage entity
+- Change Keys => F5 F6
+- Adjusted price and weights
+- Added Send vehicle to pwned point by police
+- Added set of cars and weights
+
+
+
+## [1.0.0] - 2019-11-19
+- Changed to control just release in awoken controller
+- Disabled help_text in jobs and any global_synced job
+- Added flashlight and nightstick
+- Improved inventory => disabled drag
+- Improved awoken_core
+- Can be only process the crabSteam at the cirtain point
+- Added computers location to the exist police station
+- Added jobrank system
+- Added extra item loan for each rank
+- Increased weed price
+- Added selling crab for npc
+- Removed crab native selling main => ( sell to npc instead )
+- Removed 50 ammo from weapon shop
+- Added crafted 50ammo in the awoken_craft_table
+- Disabled hit for flashLight
+- Added water to market data
+- Adjusted weed rate sell
+- Fixed hospital self disabled bed
+- Added Streamed uniform for doctor and police
+- Placed on bed can only perform by doctor
+- Fixed apartment text
+- Fixed moveable bed timing with the free prey system from interact-core
+
+## [1.0.0] - 2019-11-20
+- Change police vehicle to police from police2
+- Added sql append on registration system
+- Changed gcphone to an updated one with compatible fetch id from player
+- Fixed rconlog
+- Added phone TOOL- items
+- Made gcphone now more unique with REQUIRE PROPS
+- Added properly attached position for phone prop in the appropiate state
+- Added phone to market_framework
+- Added phone to shop
+- Disabled native phone open
+- Added awoken_base:onKeepItem useful handler
+- Added forced close phone to prevent unknown animation behavior
+- Added thread to check if the phone isn't exist anymore and still in the open-menu
+- Merge a little bit changes from [Promraungdet]
+- :BOOM: PHONE SYSTEM SUCCESSFULLY DONE
+- Added awoken_status:byPassFirstRegister which will retrive the call from meeta_creator on first register to bypass a health to make it works proper
+- Added food and water prop in prison
+- Added request food and request water in the prison system
+- Added show remain prison time every 1 minute
+- Added online cops check for minimun for weed job !!
+- Added set of realistic fish
+- Added random fish new phase => random logic
+- Changed sandwich craft old MAT-fish to MAT-forageFish
+- Reversed voice to normal
+- Added toggle mode radio ( fixed => realistic_talk disabled )
+- Fixed check for police for weed
+- Disabled hand-made craft weed
+- Fixed get item/food in jail => jailed person will not has access
+- Disabled crime alert on selling weed succeed
+- Disabled jump on cuffed person
+- Added meeta_timecycle
+- Added xD_map
+- Fixed apartment system and now it comes back to be saveable
+- Fixed lock inside apartment => now normal
+- Merged multiple vehicle and weight for admin
+- Added meeta damage meta file
+- Removed prison from xD_map [ PREVENT CONFLICT ]
+- Fixed phone system => now working properly
+- Added kick all player!
+
+## [1.0.0] - 2019-11-21
+- Added awk bank account for gcphone
+- Improved paycheck system
+
+## [1.0.0] - 2019-11-22
+- Added holster weapon system
+- Added large weapon or small weapon and keepable in the holster slot
+- Updated weapon on back to compatible with holster system
+- Added saved holster slot
+- Added check for holster system
+- Removed tazer crosshair
+- Added lists of net apartment main location
+- Added show notify on being frisk
+- Added auto swap to phone
+- Show full key name
+- Show full key plate name
+- Fixed rental Vehicle => (request control first)
+- Restriction on police => amb car menu
+- Pulled add_car_menu for police rank 1
+- Added holster information on F2 inventory menu
+- Improved check logic on length first and the break after not found+
+- Adjust house blip range to very close
+- Show only bought house
+- Updated global readMe[MD5]
+
+## [1.0.0] - 2019-11-23
+- New created aps will be now initialize to the shared inventory system
+- Added model for evidence locker in mongodb
+- Added evidence locker
+- Added initialize save pointer for evidence locker in the shared inventory
+- Restriction from other job and low rank police from accessing the evidence locker
+- Adjusted driving school blip
+- Exports isNotadmin from awoken_admin => for restriction in creating command
+- Restriction in such commands like => createAps House Evidence and also the removal
+- Added barber_shop and utils=> menu from [Promraungdet]
+- Fixed doubling house bug when pressing double enter!
+
+## [1.0.0] - 2019-11-24
+- Optimized esx_animations on handup
+- Optimized radialmenu for cached_job
+- Inventory supported item slot
+- Added handcuff on weapon on back
+- Added item holster for shift+f2
+- Added els vehicle => awk edit ( indicator included )
+
+## [1.0.0] - 2019-11-25
+- Added saved customization system
+- Jobs logic improvement
+- Removed ped inside the instance
+- Fixed moment only shows a few second ago
+- Added clear all history from police history menu
+- Fixed lscustom prevent un_bought vehicle from entering
+- Restriction from tuning any related about perf => lscustoms
+- Added got_drag => to awoken_disabled_state_pray => and applied for opening inventory condition
+- Set death timer to 30 minute and can be able to send the signal every 10 minutes
+
+## [1.0.0] - 2019-11-26
+- Making Cure system [ In Progress ] [ Hard coding ]
+
+## [1.0.0] - 2019-11-27
+- Finish Doctor Cure/Surgery System
+
+## [1.0.0] - 2019-11-29
+- Finish New Cloth System
+- Disable resource awoken_mask_shop
+- Add resource esx_skin
+
+## [1.0.0] - 2019-11-30 Daynight
+- Added carWash system
+- Middle money [ in-progress ]
+- Sleeping pills [ in-progress ]
+
+## [1.0.0] - 2019-11-30 Day
+- Middle money [ DONE ]
+- Sleeping pills/Syringe [ DONE ]
+
+## [1.0.0] - 2019-12-1
+- Improvement of carwash networking request to be able to sync the wash with all player
+- Created a thread to check and apllied the state again if the player is in the in_sleep state of the SleepSyringe when the resource get restarted
+- Added toggle neon
+- Added sit in F5 menu
+- Prevent spam of the stamina falling grip
+- Added broken leg
+- Disabled walkie talkie access when in the disabled state
+- Prevent broken leg from jumping into water
+
+## [1.0.0] - 2019-12-2
+- Added command to cure self leg for admin!
